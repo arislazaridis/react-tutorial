@@ -11,6 +11,7 @@ import ParentComponent from "./components/ParentComponent";
 import ListRendering from "./components/ListRendering";
 import Person from "./components/Person";
 import PostList from "./components/PostList";
+import GetData from "./components/GetData";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <ParentComponent />
       <Person />
       <PostList />
+      <GetData />
     </div>
   );
 }
