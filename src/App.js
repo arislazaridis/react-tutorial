@@ -14,11 +14,15 @@ import PostData from "./components/PostData";
 import GetData from "./components/GetData";
 import ClassCounter from "./components/Hooks/ClassCounter"; */
 import HookCounter from "./components/Hooks/HookCounter";
+import HookCounter2 from "./components/Hooks/HookCounter2";
+import HookCounter3 from "./components/Hooks/HookCounter3";
 
 function App() {
   return (
     <div className="App">
       <HookCounter />
+      <HookCounter2 />
+      <HookCounter3 />
     </div>
     /*
     <div className="App">
