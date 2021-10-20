@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Lesson5 from "./components/Lesson5";
+/*import Lesson5 from "./components/Lesson5";
 import Lesson6 from "./components/Lesson6";
 import Lesson10 from "./components/Lesson10";
 import Lesson11_counter from "./components/Lesson11_counter";
@@ -10,11 +10,17 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import ListRendering from "./components/ListRendering";
 import Person from "./components/Person";
-import PostList from "./components/PostList";
+import PostData from "./components/PostData";
 import GetData from "./components/GetData";
+import ClassCounter from "./components/Hooks/ClassCounter"; */
+import HookCounter from "./components/Hooks/HookCounter";
 
 function App() {
   return (
+    <div className="App">
+      <HookCounter />
+    </div>
+    /*
     <div className="App">
       <Lesson5 date={"12/10/2021"}>
         <p>This is a children from lesson5</p>
@@ -27,9 +33,12 @@ function App() {
       <EventBind />
       <ParentComponent />
       <Person />
-      <PostList />
+      <PostData />
       <GetData />
+      <ClassCounter />
+      <HookCounter />
     </div>
+    */
   );
 }
 

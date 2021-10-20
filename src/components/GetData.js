@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { Component } from "react";
 
+//get request
+
 export class GetData extends Component {
   constructor(props) {
     super(props);

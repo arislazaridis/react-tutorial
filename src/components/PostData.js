@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Post request
 
-class PostList extends Component {
+class PostData extends Component {
   constructor(props) {
     super(props);
 
@@ -78,4 +78,4 @@ class PostList extends Component {
   }
 }
 
-export default PostList;
+export default PostData;
