@@ -49,12 +49,7 @@ function Inputs() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <Input
-          value={item}
-          // id={newItem.id}
-          // title="aris"
-          handleInput={(e) => SetItem(e.target.value)}
-        />
+        <Input value={item} handleInput={(e) => SetItem(e.target.value)} />
         <ButtonInput type="submit" label="add" />
         {list.length > 0 && (
           <div>
