@@ -16,13 +16,17 @@ import ClassCounter from "./components/Hooks/ClassCounter"; */
 import HookCounter from "./components/Hooks/HookCounter";
 import HookCounter2 from "./components/Hooks/HookCounter2";
 import HookCounter3 from "./components/Hooks/HookCounter3";
+import Form from "./components/Form";
+import Inputs from "./components/Project1_ManageItems/Inputs";
 
 function App() {
   return (
     <div className="App">
-      <HookCounter />
+      {/*<HookCounter />
       <HookCounter2 />
-      <HookCounter3 />
+      <HookCounter3 /> */}
+      {/* <Form /> */}
+      <Inputs />
     </div>
     /*
     <div className="App">
