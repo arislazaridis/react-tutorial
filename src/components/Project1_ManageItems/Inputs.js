@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 
-function List({ items, removeItem }) {
+function List({ items, removeItem, clearItems }) {
   return (
     <div>
       {items.map((item) => {
         const { id, title } = item;
         return (
-          <div key={id} style={{ display: "flex" }}>
-            <p>{title}</p>
+          <div
+            key={id}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "1px 0",
+            }}
+          >
+            <p style={{ marginRight: "10px" }}>
+              <li>{title}</li>
+            </p>
             <button type="button" onClick={() => removeItem(id)}>
               delete
             </button>
@@ -46,6 +56,13 @@ function Inputs() {
     setList(list.filter((item) => item.id !== id));
   };
 
+  const clearItems = ({ list }) => {
+    if (list.length < 1) {
+      alert("No items in list");
+    }
+    setList([]);
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <div>
@@ -57,6 +74,9 @@ function Inputs() {
           </div>
         )}
       </div>
+      <button type="button" onClick={() => clearItems({ list })}>
+        clear List
+      </button>
     </form>
   );
 }
