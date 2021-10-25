@@ -18,6 +18,7 @@ import HookCounter2 from "./components/Hooks/HookCounter2";
 import HookCounter3 from "./components/Hooks/HookCounter3";
 import Form from "./components/Form";
 import Inputs from "./components/Project1_ManageItems/Inputs";
+import HookCounter4 from "./components/Hooks/HookCounter4";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       <HookCounter2 />
       <HookCounter3 /> */}
       {/* <Form /> */}
-      <Inputs />
+      {/* <Inputs /> */}
+      <HookCounter4 />
     </div>
     /*
     <div className="App">

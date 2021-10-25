@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import reactDom from "react-dom";
 
-function List({ items, removeItem, clearItems, editItems }) {
+function List({ items, removeItem, editItems }) {
   return (
     <div>
       {items.map((item) => {
@@ -62,7 +63,7 @@ function Inputs() {
       SetItem("");
       setEditID(null);
       setIsEditing(false);
-      alert(true, "success", "value changed");
+      alert(`input value is changed with ${item} value`);
     }
     console.log(item);
     const newItem = { id: new Date().getTime().toString(), title: item };
@@ -75,11 +76,12 @@ function Inputs() {
     setList(list.filter((item) => item.id !== id));
   };
 
-  const editItems = (id) => {
+  const editItems = (id, e) => {
     const specificItem = list.find((item) => item.id === id);
     setIsEditing(true);
     setEditID(id);
     SetItem(specificItem.title);
+    list.pop(item);
   };
 
   const clearItems = ({ list }) => {
