@@ -13,12 +13,15 @@ import Person from "./components/Person";
 import PostData from "./components/PostData";
 import GetData from "./components/GetData";
 import ClassCounter from "./components/Hooks/ClassCounter"; */
-import HookCounter from "./components/Hooks/HookCounter";
+/*import HookCounter from "./components/Hooks/HookCounter";
 import HookCounter2 from "./components/Hooks/HookCounter2";
 import HookCounter3 from "./components/Hooks/HookCounter3";
 import Form from "./components/Form";
 import Inputs from "./components/Project1_ManageItems/Inputs";
 import HookCounter4 from "./components/Hooks/HookCounter4";
+import GetData from "./components/HttpReq/GetData"; */
+// import Test from "./components/HttpReq/Test";
+import HookCounterOne from "./components/Hooks/HookCounterOne";
 
 function App() {
   return (
@@ -28,7 +31,10 @@ function App() {
       <HookCounter3 /> */}
       {/* <Form /> */}
       {/* <Inputs /> */}
-      <HookCounter4 />
+      {/* <HookCounter4 /> */}
+      {/* <GetData /> */}
+      {/* <Test /> */}
+      <HookCounterOne />
     </div>
     /*
     <div className="App">
