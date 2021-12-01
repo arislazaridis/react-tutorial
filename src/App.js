@@ -21,7 +21,9 @@ import Inputs from "./components/Project1_ManageItems/Inputs";
 import HookCounter4 from "./components/Hooks/HookCounter4";
 import GetData from "./components/HttpReq/GetData"; */
 // import Test from "./components/HttpReq/Test";
-import HookCounterOne from "./components/Hooks/HookCounterOne";
+// import HookCounterOne from "./components/Hooks/HookCounterOne";
+// import HookMouse from "./components/Hooks/HookMouse";
+import DataFetching from "./components/Hooks/DataFetching";
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
       {/* <HookCounter4 /> */}
       {/* <GetData /> */}
       {/* <Test /> */}
-      <HookCounterOne />
+      {/* <HookCounterOne /> */}
+      {/* <HookMouse /> */}
+      <DataFetching />
     </div>
     /*
     <div className="App">
