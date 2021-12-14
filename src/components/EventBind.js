@@ -8,7 +8,7 @@ export class EventBind extends Component {
       message: "hello",
     };
 
-    this.clickHandler = this.clickHandler.bind(this);
+    this.clickHandler = this.clickHandler.bind(this); //i desmeysi einai aparaititi giati to this tha itan undefined // binding event handler
   }
 
   clickHandler() {
@@ -18,6 +18,7 @@ export class EventBind extends Component {
   }
 
   render() {
+    //render method
     return (
       <div>
         <h1>{this.state.message}</h1>
