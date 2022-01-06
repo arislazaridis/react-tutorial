@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+//Lifecycle Methods
+
 export class LifecycleA extends Component {
   constructor(props) {
     super(props);
@@ -15,12 +17,27 @@ export class LifecycleA extends Component {
     return null;
   }
 
-  componentDidMount() {
-    console.log("LifecycleA componentDidMount");
+  //   componentDidMount() {
+  //     console.log("LifecycleA componentDidMount");
+  //   }
+
+  changeState = () => {
+    this.setState({
+      name: "Lazaridis",
+    });
+  };
+
+  componentDidUpdate() {
+    console.log("LifecycleA component Did Update");
   }
   render() {
     console.log("LifecycleA render");
-    return <div>Lifecycle A</div>;
+    return (
+      <div>
+        <div>Lifecycle A</div>
+        <button onClick={this.changeState}>change state</button>
+      </div>
+    );
   }
 }
 
