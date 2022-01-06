@@ -1,10 +1,10 @@
-
+//jsx describe the UI
 
 --Mounting --
 When an instance of a component is being created and inserted into the DOM
 Methods:
 -constructor (will get called whenever a new component is created) (Initializing state - Binding event Handlers)
--static getDerivedStateFromProps
+-static getDerivedStateFromProps // return null or the new object // is called every time a component is re-render
 -rendered
 -componentDidMount
 
@@ -14,10 +14,10 @@ Methods:
 When a component is being re-rendered as a result of changes to either its props or state
 METHODS:
 -staticDerivedStateFromProps
--shouldComponentUpdate
+-shouldComponentUpdate // return true or false if component should re-render or not
 -render
--getSnapshotBeforeUpdate
--componentDidUpdate
+-getSnapshotBeforeUpdate //called right before the changes from the virtual dom are to be reflected in the dom
+-componentDidUpdate  // called after the render is finished in the re-render cycles // parametres : prevProps , prevState , snapshot
 
 
 --Unmounting--
