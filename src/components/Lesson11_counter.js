@@ -1,28 +1,18 @@
 import React, { Component } from "react";
-import withCounter from "./HOCS/withCounter";
+
+import withCounterClass from "./HOCS/withCounterClass";
 
 export class Lesson11_counter extends Component {
   render() {
+    const { count, incrementCount } = this.props;
     return (
       <div>
-        <h2>Counter : {this.props.counter}</h2>
-        <button
-          onClick={() => {
-            this.props.increment();
-          }}
-        >
-          increment
-        </button>
-        <button
-          onClick={() => {
-            this.props.decrement();
-          }}
-        >
-          decrement
-        </button>
+        <h2>Counter : {count}</h2>
+        <button onClick={incrementCount}>increment</button>
       </div>
     );
   }
 }
 
-export default withCounter()(Lesson11_counter);
+// export default withCounter()(Lesson11_counter);
+export default withCounterClass(Lesson11_counter);

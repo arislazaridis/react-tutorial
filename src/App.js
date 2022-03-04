@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Lesson11_counter />
-      <Lesson11_counter_func />
+     
     </div>
   );
 }
