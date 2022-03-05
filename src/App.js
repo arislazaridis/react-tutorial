@@ -1,13 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Lesson11_counter from "./components/Lesson11_counter";
-import Lesson11_counter_func from "./components/Lesson11_counter_func";
+import CakeShop from "./components/Cakeshop/CakeShop";
+import { Provider } from "react-redux";
+import { store } from "./components/Redux-demo/store";
+
 function App() {
   return (
-    <div className="App">
-      <Lesson11_counter />
-     
-    </div>
+    <Provider store={store}>
+      <CakeShop />
+    </Provider>
   );
 }
 
