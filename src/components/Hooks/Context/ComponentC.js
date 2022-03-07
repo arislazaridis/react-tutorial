@@ -1,14 +1,11 @@
-import React from "react";
-import { UserContext } from "../../../App";
+import React, { useContext } from "react";
+import { UserContext } from "./ComponentA";
 
-function ComponentC() {
+function ComponentC(props) {
+  const state = useContext(UserContext);
   return (
     <div>
-      <UserContext.Provider>
-        {(user) => {
-          return <div>User context value {user}</div>;
-        }}
-      </UserContext.Provider>
+      <div>User context value {state}</div>
     </div>
   );
 }
