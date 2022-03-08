@@ -1,16 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import ComponentC from "./ComponentC";
 import { UserContext } from "./ComponentA";
 
 function ComponentB(props) {
-  return (
-    <UserContext.Provider value={props.value}>
-      <div>
-        ComponetB {props.value}
-        <ComponentC />
-      </div>
-    </UserContext.Provider>
-  );
+  const state = useContext(UserContext);
+  return <div>ComponetB {state}</div>;
 }
 
 export default ComponentB;
