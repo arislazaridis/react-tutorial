@@ -40,5 +40,3 @@ function DataFetching(props) {
 }
 
 export default DataFetching;
-
-

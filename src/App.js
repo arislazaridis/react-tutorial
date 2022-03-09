@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./components/Redux-demo/store";
 import ComponentA from "./components/Hooks/Context/ComponentA";
 import DataFetching from "./components/Hooks/DataFetching";
+import FetchData from "./components/FetchData/FetchData";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     //   <CakeShop />
     // </Provider>
     // <ComponentA />
-    <DataFetching />
+    // <DataFetching />
+    <FetchData />
   );
 }
 
